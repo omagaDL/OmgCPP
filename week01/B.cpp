@@ -9,7 +9,7 @@ int main(){
     if (D > 0){
         cout << (0 - sqrt(D) - b)/(2*a) << " " << (sqrt(D) - b)/(2*a) << endl;
     }else if(D == 0){
-        cout << (-b)/(2*a) << endl;
+        cout << (0 - b)/(2*a) << endl;
     }else{
         cout << '\n' << endl;
     }
