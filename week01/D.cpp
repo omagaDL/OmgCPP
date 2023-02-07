@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int nod(int n, int m){
+    int t=n;
+    if (n < m){
+        n = m;
+        m = t;
+    }
+    if ((n % m) == 0){
+        return m;
+    }else{
+        return nod((n % m), m);
+    }
+
+}
+
+int main(){
+    int n=0, m=0;
+    cin >> n >> m;
+    cout << nod(n, m) << endl;
+    return 0;
+}
