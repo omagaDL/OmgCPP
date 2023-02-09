@@ -19,7 +19,6 @@ int nod(int n, int m){
 int main(){
     int n=0, m=0;
     cin >> n >> m;
-    cout << n*m/(nod(n, m)) << endl;
-    cout << 10 / 3;
+    cout << n*m/nod(n, m) << endl;
     return 0;
 }
