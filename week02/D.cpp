@@ -3,7 +3,12 @@
 using namespace std;
 
 int recursive_power(int n, int deg){
-    return recursive_power(n, deg-1)*n;
+    if (deg == 0){
+        return 1;
+    }else{
+        return recursive_power(n, deg-1)*n;
+    }
+   
 }
 
 int main(){
