@@ -75,6 +75,7 @@ int main(){
     }
     for (int N = 500; N <= 5000; N = N + 500){
         std::vector<int> array = randint_array(N * step);
+        std::sort(array.begin(), array.end());
         file2 << N << ",";
         auto begin = std::chrono::steady_clock::now();
         for (unsigned cnt = 5000; cnt!= 0; --cnt){
