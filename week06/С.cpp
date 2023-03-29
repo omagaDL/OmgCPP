@@ -25,6 +25,11 @@ int main() {
     }
 
     current_time.hour += end_time.hour;
+    if (current_time.hour >= 24){
+        current_time.hour -= 24;
+    }
+    current_time.minute += (time_left / 60);
+    current_time.second += (time_left % 60);
     cout << current_time.hour << ":" << current_time.minute << ":" << current_time.second << endl;
 
     return 0;
